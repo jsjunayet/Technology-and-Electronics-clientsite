@@ -25,7 +25,7 @@ body {
   color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 40px 60px;
+  padding: 20px 30px;
 }
 
 .parallax-bg {
@@ -40,7 +40,7 @@ body {
 }
 
 .swiper-slide .title {
-  font-size: 41px;
+  font-size: 20px;
   font-weight: 300;
   text-align: center;
 }
@@ -48,7 +48,7 @@ body {
 .swiper-slide .subtitle {
   font-size: 21px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .swiper-slide .text {
