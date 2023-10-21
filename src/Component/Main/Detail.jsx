@@ -4,6 +4,21 @@ import { useLoaderData } from "react-router-dom";
 const Detail = () => {
     const Detail = useLoaderData()
     console.log(Detail)
+    const handleDetalis = () => {
+        const { price, description, rating, img, name } = Detail || {}
+        console.log(Detail)
+        fetch('http://localhost:5000/user', {
+            method: 'POST',
+            headers: {
+                'content-types': 'Application/json'
+            },
+            body: JSON.stringify(Detail)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+    }
     return (
         <div className="flex justify-center mt-20">
             <div className="card w-96 bg-base-100 shadow-xl image-full">
@@ -31,7 +46,7 @@ const Detail = () => {
                     <p>{Detail.description}</p>
                     <div className="card-actions flex justify-between items-center">
                         <p className="text-xl font-semibold">Price : $ {Detail.price}</p>
-                        <button className="btn btn-primary">Add My Card</button>
+                        <button onClick={handleDetalis} className="btn btn-primary">Add My Card</button>
                     </div>
                 </div>
             </div>
