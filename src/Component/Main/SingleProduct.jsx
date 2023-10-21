@@ -1,11 +1,78 @@
 import { Link, useLoaderData } from "react-router-dom";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import './styles.css';
+
+// import required modules
+import { Keyboard, Scrollbar, Navigation, Pagination } from 'swiper/modules';
 
 const SingleProduct = () => {
     const Newproduct = useLoaderData()
     console.log(Newproduct)
     return (
         <div>
+            <div>
+                <>
+                    <Swiper
+                        slidesPerView={1}
+                        centeredSlides={false}
+                        slidesPerGroupSkip={1}
+                        grabCursor={true}
+                        keyboard={{
+                            enabled: true,
+                        }}
+                        breakpoints={{
+                            769: {
+                                slidesPerView: 2,
+                                slidesPerGroup: 2,
+                            },
+                        }}
+                        scrollbar={true}
+                        navigation={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[Keyboard, Scrollbar, Navigation, Pagination]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide className="w-96">
+                            <img className="w-full h-[500px]" src="/iphone.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="w-full h-[500px]" src="/vivo.png" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="w-full h-[500px]" src="/monitor.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="w-full h-[500px]" src="/monitor1.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="w-full h-[500px]" src="/monitor2.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="w-full h-[500px]" src="/laptop.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="w-full h-[500px]" src="/laptop2.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="w-full h-[500px]" src="/laptop3.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="w-full h-[500px]" src="/Vivo1.png" />
+                        </SwiperSlide>
+                    </Swiper>
+                </>
+            </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-3 mt-5">
                 {
                     Newproduct.map(product => <div key={product._id}>
