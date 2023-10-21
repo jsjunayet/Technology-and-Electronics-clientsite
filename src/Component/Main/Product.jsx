@@ -14,7 +14,7 @@ const Product = () => {
         const rating = form.rating.value;
         const Myproduct = { img, name, brand, type, price, description, rating }
         console.log(Myproduct);
-        fetch('http://localhost:5000/', {
+        fetch('https://backend-site-by9c5gtna-junayet-shiblus-projects.vercel.app/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

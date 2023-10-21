@@ -11,7 +11,6 @@ import Main from './Component/Main/Main';
 import Home from './Component/Main/Home';
 import Product from './Component/Main/Product';
 import Signup from './Component/Main/Signup';
-import About from './Component/Main/About';
 import Login from './Component/Main/Login';
 import Update from './Component/Main/Navigate/Update';
 import AuthControl from './Component/AuthProvider/AuthControl';
@@ -49,22 +48,22 @@ const router = createBrowserRouter([
       {
         path: '/card',
         element: <Private><Card></Card></Private>,
-        loader: () => fetch('http://localhost:5000/card')
+        loader: () => fetch('https://backend-site-by9c5gtna-junayet-shiblus-projects.vercel.app/user')
       },
       {
         path: '/update/:id',
         element: <Update></Update>,
-        loader: ({ params }) => fetch(`http://localhost:5000/update/${params.id}`)
+        loader: ({ params }) => fetch(`https://backend-site-by9c5gtna-junayet-shiblus-projects.vercel.app/update/${params.id}`)
       },
       {
         path: `/detail/:id`,
         element: <Private><Detail></Detail></Private>,
-        loader: ({ params }) => fetch(`http://localhost:5000/detail/${params.id}`)
+        loader: ({ params }) => fetch(`https://backend-site-by9c5gtna-junayet-shiblus-projects.vercel.app/detail/${params.id}`)
       },
       {
         path: '/card/:name',
         element: <SingleProduct></SingleProduct>,
-        loader: ({ params }) => fetch(`http://localhost:5000/card/${params.name}`)
+        loader: ({ params }) => fetch(`https://backend-site-by9c5gtna-junayet-shiblus-projects.vercel.app/card/${params.name}`)
       }
 
     ]

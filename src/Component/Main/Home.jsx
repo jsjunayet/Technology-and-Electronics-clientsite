@@ -16,7 +16,7 @@ const Home = () => {
     const loaders = useLoaderData();
     console.log(loaders)
     const handleget = (name) => {
-        fetch(`http://localhost:5000/card/${name}`, {
+        fetch(`https://backend-site-by9c5gtna-junayet-shiblus-projects.vercel.app/card/${name}`, {
             method: 'GET',
         })
             .then(res => res.json())

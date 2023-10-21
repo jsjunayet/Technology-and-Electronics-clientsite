@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const Detail = () => {
@@ -6,17 +7,33 @@ const Detail = () => {
     console.log(Detail)
     const handleDetalis = () => {
         const { price, description, rating, img, name } = Detail || {}
-        console.log(Details)
-        fetch('http://localhost:5000/user', {
+        const data = {
+            price: price,
+            description: description,
+            rating: rating,
+            img: img,
+            name: name
+        }
+        console.log(data)
+        // console.log(Detail)
+        fetch('https://backend-site-by9c5gtna-junayet-shiblus-projects.vercel.app/user', {
             method: 'POST',
             headers: {
-                'content-types': 'Application/json'
+                'content-type': 'Application/json'
             },
-            body: JSON.stringify(Detail)
+            body: JSON.stringify(data)
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                if (data.insertedId) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Successfuly! Product information in to the database',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
             })
     }
     return (
