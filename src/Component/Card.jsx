@@ -105,7 +105,7 @@ const Card = () => {
                                     <p className="text-xl">price: $ {product?.price}</p>
                                     <p className="text-xl">{product?.type}</p>
                                 </div>
-                                <div className="inline-flex flex-wrap items-center gap-3 mt-3 group">
+                                <div className="inline-flex flex-wrap items-center gap-3 mt-1 group">
                                     <span
                                         data-tooltip-target="money"
                                         className="cursor-pointer rounded-full border border-pink-500/5 bg-pink-500/5 p-3 text-pink-500 transition-colors hover:border-pink-500/10 hover:bg-pink-500/10 hover:!opacity-100 group-hover:opacity-70"
@@ -242,7 +242,7 @@ const Card = () => {
                             </div>
                             <div className=" p-6">
                                 <button onClick={() => handleDelte(product._id)}
-                                    className="block w-full select-none rounded-lg bg-pink-500 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                    className="block w-full select-none rounded-lg bg-pink-500 py-2.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                     type="button"
                                     data-ripple-light="true"
                                 >
