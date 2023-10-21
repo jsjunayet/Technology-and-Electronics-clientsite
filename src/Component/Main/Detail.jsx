@@ -6,7 +6,7 @@ const Detail = () => {
     console.log(Detail)
     const handleDetalis = () => {
         const { price, description, rating, img, name } = Detail || {}
-        console.log(Detail)
+        console.log(Details)
         fetch('http://localhost:5000/user', {
             method: 'POST',
             headers: {

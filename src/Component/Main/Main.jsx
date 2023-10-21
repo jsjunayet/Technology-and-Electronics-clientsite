@@ -39,22 +39,21 @@ const Main = () => {
     }
     console.log(user)
     return (
-        <div>
+        <div >
             <div>
                 <div className=" max-w-7xl mx-auto">
-                    <div className="navbar bg-[#D0D9E5]">
-                        <div className="flex-1">
+                    <div className="lg:flex gap-6 sm:gap-8 items-center   bg-[#D0D9E5]">
+                        <div className="">
                             <img src="/logo.jpg" alt="" />
                         </div>
 
-                        <div className="lg:flex gap-10">
-                            <div className="">
-                                <Link to={'/'} className="text-2xl ml-10 font-semibold">Home</Link>
-                                <Link to={'/product'} className="text-2xl ml-10 font-semibold">Add Product</Link>
-                                <Link to={'/card'} className="text-2xl ml-10 font-semibold">My Card</Link>
+                        <div className="lg:ml-60 ml-0 lg:my-0 my-5">
+                            <Link to={'/'} className="text-2xl ml-10 font-semibold">Home</Link>
+                            <Link to={'/product'} className="text-2xl ml-10 font-semibold">Add Product</Link>
+                            <Link to={'/card'} className="text-2xl ml-10 font-semibold">My Card</Link>
 
-                            </div>
-
+                        </div>
+                        <div className="flex items-center gap-4">
                             <div className="dropdown dropdown-end">
                                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
@@ -79,6 +78,7 @@ const Main = () => {
                                     </li>
                                 </ul>
                             </div>
+
                             <div>
                                 {
                                     user ? <Link onClick={handleLogout} className="text-xl font-semibold bg-[#004B91] text-white px-2 py-1 rounded">LogOut</Link> :
@@ -86,11 +86,15 @@ const Main = () => {
                                 }
 
                             </div>
-                            <button onClick={toggleTheme} className="text-xl  bg-[#98C53B] text-white px-2 py-1 rounded">
-                                {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-                            </button>
+                            <div>
+                                <button onClick={toggleTheme} className="text-xl  bg-[#98C53B] text-white px-2 py-1 rounded">
+                                    {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+                                </button>
+                            </div>
+
                         </div>
                     </div>
+
 
 
                 </div>
