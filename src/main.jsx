@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/update/:id',
-        element: <Update></Update>,
+        element: <Private><Update></Update></Private>,
         loader: ({ params }) => fetch(`https://backend-site-by9c5gtna-junayet-shiblus-projects.vercel.app/update/${params.id}`)
       },
       {

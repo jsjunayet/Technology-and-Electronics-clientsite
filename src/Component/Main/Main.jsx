@@ -3,10 +3,7 @@ import { useContext, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthControl";
 import Swal from "sweetalert2";
-
-
-
-
+import './dark.css';
 const Main = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -39,7 +36,7 @@ const Main = () => {
     }
     console.log(user)
     return (
-        <div >
+        <div className={`App ${theme}`}>
             <div>
                 <div className=" max-w-7xl mx-auto">
                     <div className="lg:flex gap-6 sm:gap-8 items-center   bg-[#D0D9E5]">
@@ -48,12 +45,12 @@ const Main = () => {
                         </div>
 
                         <div className="lg:ml-60 ml-0 lg:my-0 my-5">
-                            <Link to={'/'} className="text-2xl ml-10 font-semibold">Home</Link>
-                            <Link to={'/product'} className="text-2xl ml-10 font-semibold">Add Product</Link>
-                            <Link to={'/card'} className="text-2xl ml-10 font-semibold">My Card</Link>
+                            <Link to={'/'} className="text-2xl  lg:ml-10 ml-4 font-semibold">Home</Link>
+                            <Link to={'/product'} className="text-2xl lg:ml-10 ml-4 font-semibold">Add Product</Link>
+                            <Link to={'/card'} className="text-2xl lg:ml-10 ml-4 font-semibold">My Card</Link>
 
                         </div>
-                        <div className="flex items-center gap-4">
+                        <div className="flex justify-center items-center gap-4">
                             <div className="dropdown dropdown-end">
                                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
@@ -63,7 +60,7 @@ const Main = () => {
                                         }
                                     </div>
                                 </label>
-                                <ul tabIndex={0} className="mt-3  p-2 shadow menu  dropdown-content bg-base-100 rounded-box w-64 z-10">
+                                <ul tabIndex={0} className="mt-3  p-2 shadow menu  dropdown-content bg-base-100 rounded-box lg:w-64 w-40 z-20">
                                     <li>
 
                                         {
@@ -71,7 +68,7 @@ const Main = () => {
                                                 <span className=""> Name : </span>
                                         }
 
-                                        {user ? <a className="justify-between whitespace-nowrap">Email : {user?.email}</a> :
+                                        {user ? <a className="justify-between lg:whitespace-nowrap">Email : {user?.email}</a> :
                                             <a className="justify-between">Email : </a>
                                         }
 

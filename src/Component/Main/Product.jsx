@@ -29,9 +29,9 @@ const Product = () => {
         form.reset()
     }
     return (
-        <div className="px-20">
+        <div className="lg:px-20 px-2">
             <form onSubmit={handleform}>
-                <div className="flex gap-10 w-full">
+                <div className="flex lg:gap-10 gap-2 w-full">
                     <div className="form-control w-1/2">
                         <label className="label">
                             <span className="label-text">Image</span>
@@ -45,7 +45,7 @@ const Product = () => {
                         <input type="text" placeholder="Name" name="name" className="input input-bordered" required />
                     </div>
                 </div>
-                <div className="flex gap-10 w-full items-center">
+                <div className="flex lg:gap-10 gap-2 w-full items-center">
                     <div className="form-control w-1/2">
                         <label className="label">
                             <span className="label-text">Brand Name</span>
@@ -64,7 +64,7 @@ const Product = () => {
                     </div>
 
                 </div>
-                <div className="flex gap-10 w-full">
+                <div className="flex lg:gap-10 gap-2 w-full">
                     <div className="form-control w-1/2">
                         <label className="label">
                             <span className="label-text">Price</span>
