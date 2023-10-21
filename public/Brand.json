@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Apple",
+        "img": "https://i.ibb.co/mz6DP3m/pexels-ivan-babydov-7789851.jpg"
+    },
+    {
+        "name": "Samsung",
+        "img": "https://i.ibb.co/3BHpw11/Samsung-2.webp"
+    },
+    {
+        "name": "Sony",
+        "img": "https://i.ibb.co/pfGdD1s/sony.jpg"
+    },
+    {
+        "name": "Google",
+        "img": "https://i.ibb.co/v4vV5Yw/mitchell-luo-jz4ca36o-J-M-unsplash.jpg"
+    },
+    {
+        "name": "Intel",
+        "img": "https://i.ibb.co/x3FcRfJ/intel-cards-limited-edition-graphics-illustration-picture-ai-generated-art-882313-502.jpg"
+    },
+    {
+        "name": "Vivo",
+        "img": "https://i.ibb.co/MfCvXTm/HD-wallpaper-vivo-logo-light-neon-art-vivo-emblem-vivo-neon-logo-creative-art-vivo.jpg"
+    }
+]
