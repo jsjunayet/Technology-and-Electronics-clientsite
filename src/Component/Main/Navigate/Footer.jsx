@@ -18,19 +18,20 @@ const currentYear = new Date().getFullYear();
 const Footer = () => {
     return (
         <div>
-            <footer className="relative w-full">
+            <footer className="relative w-full text-white bg-gray-900 pt-10 rounded-l-3xl">
                 <div className="mx-auto w-full max-w-7xl px-8">
                     <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-                        <Typography variant="h5" className="mb-6">
+                        <Typography variant="h5" className="mb-6  text-2xl">
                             Technology and Electronics
                         </Typography>
-                        <div className="grid grid-cols-3 justify-between gap-4">
+                        <div className="grid grid-cols-3 justify-between gap-4 text-white">
                             {LINKS.map(({ title, items }) => (
                                 <ul key={title}>
                                     <Typography
                                         variant="small"
                                         color="blue-gray"
-                                        className="mb-3 font-medium opacity-40"
+                                        className="mb-3 font-medium text-white text-xl"
+
                                     >
                                         {title}
                                     </Typography>

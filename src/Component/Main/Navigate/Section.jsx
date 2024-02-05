@@ -4,16 +4,17 @@ const Section = () => {
     return (
         <div>
             <div>
-                <div className="hero">
-                    <div className="hero-content flex-col gap-24 lg:flex-row">
-                        <img src="/section.jpg" className="lg:w-[50%] w-full " />
-                        <div className="w-full lg:w-[50%]">
-                            <h1 className="text-4xl font-bold">Technology and Electronics</h1>
-                            <p className="py-6">The rapid advancements in technology and electronics have not only streamlined everyday tasks but have also facilitated the development of innovative solutions for complex global challenges. From the proliferation of smart home devices to the integration of artificial intelligence in various sectors, the transformative impact of technology continues to redefine the way people live and work, fostering unprecedented levels of interconnectedness and efficiency. As the world embraces a digital future, the integration of technology and electronics is expected to play an increasingly central role in shaping the way societies function and progress.</p>
-                            <div className="flex items-center gap-5">
-                                <input type="text" placeholder="Type here" className="input input-bordered input-primary w-full max-w-xs" />
-                                <button className="bg-[#97C33C] lg:px-3 px-1 lg:py-[10px] py-[5px] text-black lg:text-xl text-sm rounded hover:bg-slate-200">Get Started</button>
-
+                <div className="container">
+                    <div className="hero">
+                        <div className="hero-content flex-col lg:flex-row gap-8">
+                            <img src="/section.jpg" className="lg:w-[50%] w-full rounded-xl" alt="Technology and Electronics Image" />
+                            <div className="w-full lg:w-[50%]">
+                                <h1 className="text-4xl font-bold mb-4">Technology and Electronics</h1>
+                                <p className="text-gray-600 mb-8">Experience the future with the latest in technology and electronics. Discover innovative solutions that simplify your life and address global challenges. From smart home devices to artificial intelligence, our advancements are reshaping how societies function and progress.</p>
+                                <div className="flex items-center gap-4">
+                                    <input type="text" placeholder="Type here" className="input input-bordered input-primary w-full max-w-xs" />
+                                    <button className="bg-green-500 px-3 py-2 text-white text-lg rounded hover:bg-green-600">Get Started</button>
+                                </div>
                             </div>
                         </div>
                     </div>

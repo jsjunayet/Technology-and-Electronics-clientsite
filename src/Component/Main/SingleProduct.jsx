@@ -18,7 +18,7 @@ const SingleProduct = () => {
     const Newproduct = useLoaderData()
     console.log(Newproduct)
     return (
-        <div>
+        <div className=" pt-36">
             <div>
                 <>
                     <Swiper

@@ -29,7 +29,7 @@ const Product = () => {
         form.reset()
     }
     return (
-        <div className="lg:px-20 px-2">
+        <div className="pt-32">
             <form onSubmit={handleform}>
                 <div className="flex lg:gap-10 gap-2 w-full">
                     <div className="form-control w-1/2">

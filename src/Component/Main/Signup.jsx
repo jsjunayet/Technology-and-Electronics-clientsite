@@ -82,8 +82,8 @@ const Signup = () => {
 
     return (
         <div>
-            <div className="hero  bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="hero  pt-24">
+                <div className="hero-content flex-col lg:flex-row-reverse py-10">
                     {/* <div className="text-center lg:text-left grid grid-cols-2 gap-3">
                        
                     </div> */}

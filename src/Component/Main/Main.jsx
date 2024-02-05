@@ -4,6 +4,7 @@ import { authContext } from "../AuthProvider/AuthControl";
 import Swal from "sweetalert2";
 import './dark.css';
 
+
 const Main = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 

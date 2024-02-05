@@ -28,16 +28,15 @@ const Hero = () => {
         pagination={{ clickable: true }}
       >
         <SwiperSlide>
-          <div className="relative max-w-7xl mx-auto rounded-b-md shadow-xl overflow-hidden bg-indigo-50 dark:bg-gray-900">
+          <div className="relative max-w-7xl mx-auto rounded-b-md shadow-xl overflow-hidden">
             <div className="dark:hidden dark:sm:block absolute inset-0">
               <img
                 className="h-full w-full object-cover"
                 src="../../public/bg.jpg"
                 alt="banner Image"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 dark:from-gray-400 dark:to-gray-400 mix-blend-multiply"></div>
             </div>
-            <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:pt-28  lg:px-8 lg:pb-28">
+            <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:pt-28 lg:px-8 lg:pb-28">
               <motion.h1
                 initial={{ x: 100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -56,7 +55,7 @@ const Hero = () => {
                   <span className="block text-indigo-300">
                     <TypewriterComponent
                       options={{
-                        strings: ["Innovation.", "Discover New Gadgets."],
+                        strings: ["Innovation.", "Gadgets."],
                         autoStart: true,
                         loop: true,
                       }}

@@ -37,7 +37,7 @@ const Detail = () => {
             })
     }
     return (
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center pt-36">
             <div className="card w-96 bg-base-100 shadow-xl image-full">
                 <img className="mx-auto" src={Detail.img} alt="Shoes" />
                 <div className="card-body">
