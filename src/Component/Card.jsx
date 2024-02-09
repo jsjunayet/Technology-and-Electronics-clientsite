@@ -44,7 +44,7 @@ const Card = () => {
     }
 
     return (
-        <div className="grid grid-cols-1 bg-white lg:grid-cols-3 md:grid-cols-2 gap-3 min-h-screen pb-2 pt-28">
+        <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-3 min-h-screen pb-2 pt-28">
             {
                 Newproduct.map(product =>
                     <div key={product._id} className="relative h-full flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">

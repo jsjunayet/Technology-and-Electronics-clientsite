@@ -1,5 +1,4 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AiFillFacebook, AiFillGithub, AiFillGoogleCircle } from 'react-icons/ai';
 import { useContext, useState } from "react";
 import { authContext } from "../AuthProvider/AuthControl";
 import Swal from "sweetalert2";
