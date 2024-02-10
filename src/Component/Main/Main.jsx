@@ -3,43 +3,45 @@ import { Link, Outlet } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthControl";
 import Swal from "sweetalert2";
 import './dark.css';
+import Nav from "../nav";
+
 
 
 const Main = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    // const [isDarkMode, setIsDarkMode] = useState(false);
 
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-    };
+    // const toggleTheme = () => {
+    //     setIsDarkMode(!isDarkMode);
+    // };
 
-    const { user, logout } = useContext(authContext);
+    // const { user, logout } = useContext(authContext);
 
-    const handleLogout = () => {
-        logout()
-            .then(result => {
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'LogOut Successful',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-            })
-            .catch(error => {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops LogOut...',
-                    text: `${error.message}`,
-                    footer: '<a href="">Why do I have this issue?</a>'
-                });
-            });
-    };
+    // const handleLogout = () => {
+    //     logout()
+    //         .then(result => {
+    //             Swal.fire({
+    //                 position: 'top-end',
+    //                 icon: 'success',
+    //                 title: 'LogOut Successful',
+    //                 showConfirmButton: false,
+    //                 timer: 1500
+    //             });
+    //         })
+    //         .catch(error => {
+    //             Swal.fire({
+    //                 icon: 'error',
+    //                 title: 'Oops LogOut...',
+    //                 text: `${error.message}`,
+    //                 footer: '<a href="">Why do I have this issue?</a>'
+    //             });
+    //         });
+    // };
 
-    console.log(user);
+
 
     return (
-        <div className={isDarkMode ? "bg-gray-800 text-white" : ""}>
-            <div className={`shadow-xl  ${isDarkMode ? "bg-base-100 text-black" : "bg-gray-800 text-white"} fixed z-30 w-full`}>
+        <div>
+            {/* <div className={`shadow-xl  ${isDarkMode ? "bg-base-100 text-black" : "bg-gray-800 text-white"} fixed z-30 w-full`}>
                 <div className="lg:flex gap-6 justify-between items-center max-w-7xl mx-auto ">
                     <div className="">
                         <img src="/logo.jpg" alt="" className="h-24 w-32 object-contain" />
@@ -78,7 +80,8 @@ const Main = () => {
                     </div>
                 </div>
                 <hr className="bg-black h-1" />
-            </div>
+            </div> */}
+            <Nav></Nav>
             <div className="max-w-7xl mx-auto">
                 <Outlet></Outlet>
             </div>
