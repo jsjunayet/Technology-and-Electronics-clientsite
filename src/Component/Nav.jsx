@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { IoIosHome, IoIosBuild, IoIosPeople, IoIosPaper, IoIosMail } from "react-icons/io";
+import { IoIosHome, IoIosBuild, IoIosPeople, IoIosPaper, IoIosMail, IoIosCart, IoIosCube } from "react-icons/io";
 import { FiMenu, FiX } from "react-icons/fi";
 import { motion, useAnimation } from "framer-motion";
 
 const Nav = () => {
     const links = [
         { name: "HOME", path: "/", icon: <IoIosHome /> },
-        { name: "SERVICE", path: "/service", icon: <IoIosBuild /> },
-        { name: "ABOUT", path: "/about", icon: <IoIosPeople /> },
-        { name: "BLOG'S", path: "/blogs", icon: <IoIosPaper /> },
-        { name: "CONTACT", path: "/contact", icon: <IoIosMail /> },
+        { name: "PRODUCT", path: "/product", icon: <IoIosCube /> },
+        { name: "CARD", path: "/card", icon: <IoIosCart /> },
     ];
+
     const [open, setOpen] = useState(false);
     const controls = useAnimation();
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -51,7 +50,7 @@ const Nav = () => {
                     <span className="text-3xl text-indigo-600 mr-1 pt-2">
                         <ion-icon name="logo-ionic"></ion-icon>
                     </span>
-                    Designer
+                    Electronic
                 </Link>
 
                 <div className="md:hidden">
